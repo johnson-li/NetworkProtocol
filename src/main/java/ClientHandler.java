@@ -27,14 +27,14 @@ public class ClientHandler extends ChannelHandlerAdapter{
     public ClientHandler() {
         byteBuf = Unpooled.buffer();
 
-        queryTest(byteBuf);
-        deleteTest(byteBuf);
-        addTest(byteBuf);
+//        queryTest(byteBuf);
+//        deleteTest(byteBuf);
+//        addTest(byteBuf);
         editTest(byteBuf);
     }
 
     ByteBuf editTest(ByteBuf byteBuf) {
-        return edit(byteBuf, 2, Columns.sex, "female");
+        return edit(byteBuf, 2, Columns.sex, "male");
     }
 
     ByteBuf deleteTest(ByteBuf byteBuf) {
